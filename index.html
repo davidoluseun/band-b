@@ -14,7 +14,7 @@
         <div class="container">
           <h1 class="navbar-brand">Band</h1>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav" aria-controls="toggleNav" aria-expanded-"false" aria-label="toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav" aria-controls="toggleNav" aria-expanded="false" aria-label="toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button><!-- .navbar-toggler -->
 
@@ -228,14 +228,20 @@
         <div class="container">
           <h2 class="text-center mb-3">From The Blog</h2>
 
-          <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#peter">Peter</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#joy">Joy</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#glory">Glory</a></li>
+          <ul class="nav nav-tabs" id="blogTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="peter-tab" data-toggle="tab" href="#peter" role="tab" aria-controls="peter" aria-selected="true">Peter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="joy-tab" data-toggle="tab" href="#joy" role="tab" aria-controls="joy" aria-selected="false">Joy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="glory-tab" data-toggle="tab" href="#glory" role="tab" aria-controls="glory" aria-selected="false">Glory</a>
+            </li>
           </ul><!-- .nav-tabs -->
 
-          <div class="tab-content">
-            <section id="peter" class="tab-pane active">
+          <div class="tab-content" id="blogTabContent">
+            <section id="peter" class="tab-pane fade show active" id="peter" role="tabpanel" aria-labelledby="">
               <h3 class="pt-3">Mick Ross, Manager</h3>
               <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -247,7 +253,7 @@
               </p>
             </section><!-- .tab-pane -->
 
-            <section id="joy" class="tab-pane fade">
+            <section id="joy" class="tab-pane fade" id="joy" role="tabpanel" aria-labelledby="">
               <h3 class="pt-3">Mick Ross, Manager</h3>
               <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -259,7 +265,7 @@
               </p>
             </section><!-- .tab-pane -->
 
-            <section id="glory" class="tab-pane fade">
+            <section id="glory" class="tab-pane fade" id="glory" role="tabpanel" aria-labelledby="">
               <h3 class="pt-3">Mick Ross, Manager</h3>
               <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
