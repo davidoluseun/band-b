@@ -1,0 +1,63 @@
+/* Form validation */
+
+.help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;  
+}
+
+.control-group.error .help-block {
+    color: #dc3545;
+}
+
+.control-group.error input, 
+.control-group.error textarea {
+    border-color: #dc3545;
+}
+
+.control-group.error input:focus,
+.control-group.error textarea:focus {
+    border-color: #dc3545;
+    -moz-box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+    box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+}
+
+.error input:invalid:focus, 
+.error textarea:invalid:focus {
+    border-color: #dc3545;
+    -moz-box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+    -webkit-box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+    box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+}
+
+.control-group.warning .help-block {
+    color: #ffc107;
+}
+
+.control-group.warning input,
+.control-group.warning textarea {
+    border-color: #ffc107;
+}
+
+.control-group.warning input:focus,
+.control-group.warning textarea:focus {
+    border-color: #ffc107;
+    -moz-box-shadow: 0 0 0 .2rem rgba(222, 170, 12, .5); 
+    -webkit-box-shadow: 0 0 0 .2rem rgba(222, 170, 12, .5); 
+    box-shadow: 0 0 0 .2rem rgba(222, 170, 12, .5); 
+  
+}
+
+.control-group.success input,
+.control-group.success textarea {
+    border-color: #28a745;
+}
+
+.control-group.success input:focus,
+.control-group.success textarea:focus {
+    border-color: #28a745;
+    -moz-box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .25);
+    -webkit-box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .25);
+    box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .25);
+}
