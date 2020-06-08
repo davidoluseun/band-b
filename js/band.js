@@ -39,7 +39,7 @@
     $("#nav-search").toggleClass("d-none");
 
     // Toggle site search icon
-    var $searchIcon = $("#search-icon"); // variable for search link
+    var $searchIcon = $("#search-icon"); // variable for search icon
     $searchIcon.toggleClass("fa-search");
     $searchIcon.toggleClass("fa-times");
   }

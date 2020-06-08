@@ -144,7 +144,7 @@
                 <div class="card-body">
                   <img class="card-img img-fluid" src="images/newyork-img.jpg" alt="">
                   <div class="text-center">
-                    <h3 class="card-title mb-0 pt-3">New York</h3>
+                    <h3 class="card-title h4 mb-0 pt-3">New York</h3>
                     <p class="card-text">Wednesday 15th January, 2020</p>
                     <a class="btn btn-dark" href="#">Buy Tickets</a>
                   </div><!-- .text-center -->
@@ -157,7 +157,7 @@
                 <div class="card-body">
                   <img class="card-img img-fluid" src="images/paris-img.jpg" alt="">
                   <div class="text-center">
-                    <h3 class="card-title mb-0 pt-3">Paris</h3>
+                    <h3 class="card-title h4 mb-0 pt-3">Paris</h3>
                     <p class="card-text">Friday 7th Feburary, 2020</p>
                     <a class="btn btn-dark" href="#">Buy Tickets</a>
                   </div><!-- .text-center -->
@@ -170,7 +170,7 @@
                 <div class="card-body">
                   <img class="card-img img-fluid" src="images/sanfran-img.jpg" alt="">
                   <div class="text-center">
-                    <h3 class="card-title mb-0 pt-3">San Francisco</h3>
+                    <h3 class="card-title h4 mb-0 pt-3">San Francisco</h3>
                     <p class="card-text">Saturday 25th April, 2020</p>
                     <a class="btn btn-dark" href="#">Buy Tickets</a>
                   </div><!-- .text-center -->
@@ -189,25 +189,32 @@
               <h3>Fan? Drop a note.</h3>
               <p>We like to here from you</p>
 
-              <form action="index.html" method="post">
+              <form class="contact-form" novalidate>
                 <div class="d-lg-flex">
-                  <div class="form-group col-lg-6 px-0 pr-lg-3">
+                  <div class="control-group form-group col-lg-6 px-0 pr-lg-3">
                     <label class="form-control-label sr-only" for="v-name">Name</label>
-                      <input class="form-control" type="text" name="v-name" id="v-name" placeholder="Name">
+                    <div class="controls">
+                      <input class="form-control" type="text" name="v-name" id="v-name" placeholder="Name" required>
+                    </div><!-- .controls -->
                   </div><!-- .form-group -->
 
-                  <div class="form-group col-lg-6 px-0 pl-lg-3">
+                  <div class="control-group form-group col-lg-6 px-0 pl-lg-3">
                     <label class="form-control-label sr-only" for="v-email">Email</label>
-                      <input class="form-control" type="email" name="v-email" id="v-email" placeholder="Email">
+                    <div class="controls">
+                      <input class="form-control" type="email" name="v-email" id="v-email" placeholder="Email" required>
+                    </div><!-- .controls -->
                   </div><!-- .form-group -->
                 </div><!-- .d-lg-flex -->
 
-                <div class="form-group">
+                <div class="control-group form-group">
                   <label class="form-control-label sr-only" for="v-comment">Let's have your comment</label>
-                  <textarea class="form-control" name="name" rows="4" cols="50" placeholder="Comment" id="v-comment"></textarea>
+                  <div class="controls">
+                    <textarea class="form-control" name="v-comment" id="v-comment" rows="4" cols="50" placeholder="Comment" required></textarea>
+                  </div><!-- .controls -->
                 </div><!-- .form-group -->
+                <div id="feedback"></div><!-- .feedback - success/fail feedback -->
                 <input class="btn btn-dark" type="submit" value="Submit Comment">
-              </form>
+              </form><!-- .contact-form -->
             </section><!-- .col-md-7 -->
 
             <aside class="col-md-4 pt-4 pt-md-0">
@@ -353,6 +360,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/band.js"></script>
   </body>
 </html>
